@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Babbo Natale segreto online: estrazione gratis su WhatsApp</title>
+<meta name="description" content="Organizza il Babbo Natale segreto in un minuto: inserisci i nomi, aggiungi esclusioni e budget, e manda a ognuno il suo link su WhatsApp. Gratis, senza app né registrazione.">
+<link rel="canonical" href="https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/">
+<meta name="theme-color" content="#123d30">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Babbo Segreto">
+<meta property="og:title" content="Babbo Natale segreto: estrai i nomi e mandali su WhatsApp">
+<meta property="og:description" content="Gratis, senza app né registrazione. Un link a testa, e nessuno scopre chi ha pescato chi.">
+<meta property="og:url" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/">
+<meta property="og:image" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;800&family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Babbo Segreto",
+  "url": "https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Qualsiasi browser",
+  "inLanguage": "it",
+  "description": "Generatore gratuito per il Babbo Natale segreto (Secret Santa): estrazione con esclusioni e budget, un link personale per ogni partecipante da inviare su WhatsApp, senza registrazione.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Serve registrarsi o scaricare un'app?", "acceptedAnswer": {"@type": "Answer", "text": "No. Inserisci i nomi, premi Estrai e mandi a ognuno il suo link. Chi lo riceve lo apre nel browser del telefono."}},
+    {"@type": "Question", "name": "L'organizzatore può vedere chi ha pescato chi?", "acceptedAnswer": {"@type": "Answer", "text": "Il risultato è nascosto dentro i link e non compare mai sullo schermo dell'organizzatore. Basta che ognuno apra solo il proprio link."}},
+    {"@type": "Question", "name": "Posso evitare che due persone si peschino a vicenda?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Con le esclusioni puoi impedire, per esempio, che una coppia si faccia il regalo a vicenda."}},
+    {"@type": "Question", "name": "Dove finiscono i nomi che inserisco?", "acceptedAnswer": {"@type": "Answer", "text": "Da nessuna parte: l'estrazione avviene sul tuo telefono e i dati viaggiano solo dentro i link che mandi tu. Non c'è un database."}}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#crea">Vai all'estrazione</a>
+
+<header class="top">
+  <a class="brand" href="./">Babbo Segreto</a>
+  <nav><a href="guida/">Come si organizza</a><a href="idee-regalo/">Idee regalo</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Il Babbo Natale segreto, estratto in un minuto.</h1>
+      <p class="lead">Scrivi i nomi, premi Estrai e manda a ognuno il suo link su WhatsApp. Nessuna app, nessuna registrazione, e nemmeno tu saprai chi ha pescato chi.</p>
+      <a class="btn btn-wax" href="#crea">Crea il tuo gruppo</a>
+    </div>
+    <div class="hat" aria-hidden="true">
+      <div class="slip s1"><span>Lucia</span></div>
+      <div class="slip s2"><span>Marco</span></div>
+      <div class="slip s3"><span>Nonna Pina</span></div>
+      <div class="slip s4"><span>?</span></div>
+      <div class="bowl"></div>
+    </div>
+  </section>
+
+  <section id="crea" class="panel" aria-labelledby="crea-h">
+    <h2 id="crea-h">Il tuo gruppo</h2>
+    <form id="form" novalidate>
+      <div class="row2">
+        <label>Nome del gruppo
+          <input name="group" maxlength="40" placeholder="Famiglia Esposito" required>
+        </label>
+        <label>Budget a testa
+          <span class="euro"><input name="budget" inputmode="numeric" maxlength="5" placeholder="20"></span>
+        </label>
+      </div>
+      <div class="row2">
+        <label>Giorno dello scambio
+          <input name="date" type="date">
+        </label>
+        <label>Messaggio per tutti <small>(facoltativo)</small>
+          <input name="msg" maxlength="90" placeholder="Si apre tutto dopo il cenone">
+        </label>
+      </div>
+
+      <fieldset class="people">
+        <legend>Partecipanti <small id="count">(almeno 3)</small></legend>
+        <ol id="list"></ol>
+        <button type="button" id="add" class="btn btn-ghost">Aggiungi una persona</button>
+        <p class="hint">Nel campo idea puoi scrivere cosa piace a quella persona: lo vedrà solo chi la pesca.</p>
+      </fieldset>
+
+      <fieldset class="excl">
+        <legend>Esclusioni <small>(facoltative)</small></legend>
+        <p class="hint">Chi non deve pescare chi, per esempio due fidanzati.</p>
+        <div id="exList"></div>
+        <button type="button" id="addEx" class="btn btn-ghost">Aggiungi un'esclusione</button>
+      </fieldset>
+
+      <p id="err" class="err" role="alert" hidden></p>
+      <button class="btn btn-wax btn-big" type="submit">Estrai i nomi</button>
+    </form>
+
+    <div id="out" hidden>
+      <h2 tabindex="-1" id="out-h">Estrazione fatta. Ora manda i link.</h2>
+      <p class="lead">Ogni link mostra il nome pescato solo a chi lo apre. Mandalo alla persona giusta e non aprire quelli degli altri, compreso il tuo se vuoi la sorpresa fino all'ultimo.</p>
+      <ul id="links" class="links"></ul>
+      <div class="out-actions">
+        <button type="button" id="copyAll" class="btn btn-ghost">Copia tutti i link</button>
+        <button type="button" id="again" class="btn btn-ghost">Nuova estrazione</button>
+      </div>
+      <p class="hint">Il gruppo resta salvato su questo telefono, così puoi rimandare un link se qualcuno lo perde.</p>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="how-h">
+    <h2 id="how-h">Come funziona</h2>
+    <ol class="steps">
+      <li><strong>Scrivi i nomi.</strong> Aggiungi budget, data e, se serve, chi non deve pescare chi.</li>
+      <li><strong>Premi Estrai.</strong> L'estrazione avviene sul tuo telefono, a caso, rispettando le esclusioni.</li>
+      <li><strong>Manda i link.</strong> Ognuno apre il suo bigliettino e scopre a chi fare il regalo.</li>
+    </ol>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">Domande frequenti</h2>
+    <details><summary>Serve registrarsi o scaricare un'app?</summary><p>No. Inserisci i nomi, premi Estrai e mandi a ognuno il suo link. Chi lo riceve lo apre nel browser del telefono.</p></details>
+    <details><summary>L'organizzatore può vedere chi ha pescato chi?</summary><p>Il risultato è nascosto dentro i link e non compare mai sul tuo schermo. Basta che ognuno apra solo il proprio.</p></details>
+    <details><summary>Posso partecipare anche io che organizzo?</summary><p>Sì, scrivi anche il tuo nome. Il tuo link è nella lista come gli altri: aprilo solo quando vuoi scoprire chi ti è toccato.</p></details>
+    <details><summary>Posso evitare che due persone si peschino a vicenda?</summary><p>Sì, con le esclusioni. Puoi aggiungerne quante vuoi, finché l'estrazione resta possibile.</p></details>
+    <details><summary>Dove finiscono i nomi che inserisco?</summary><p>Da nessuna parte. Non c'è un database: i dati viaggiano solo dentro i link che mandi tu.</p></details>
+    <details><summary>Funziona per i colleghi in ufficio o in smart working?</summary><p>Sì, ed è proprio il caso in cui conviene di più: niente bigliettini nel cappello, ognuno riceve il suo link in chat.</p></details>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Babbo Segreto è gratuito e non salva i tuoi dati. <a href="guida/">Guida al Babbo Natale segreto</a> <a href="idee-regalo/">Idee regalo per budget</a> <a href="privacy/">Privacy</a></p>
+</footer>
+
+<script src="codec.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

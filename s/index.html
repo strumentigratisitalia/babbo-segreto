@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hai un bigliettino del Babbo Natale segreto</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Apri il tuo bigliettino e scopri a chi devi fare il regalo. È solo per te.">
+<meta name="theme-color" content="#123d30">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Babbo Segreto">
+<meta property="og:title" content="🎁 Hai un bigliettino del Babbo Natale segreto">
+<meta property="og:description" content="Aprilo per scoprire a chi devi fare il regalo. È solo per te, non mostrarlo a nessuno.">
+<meta property="og:image" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/og-bigliettino.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;800&family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="reveal-page">
+<header class="top">
+  <a class="brand" href="../">Babbo Segreto</a>
+</header>
+
+<main class="reveal">
+  <section id="gate" hidden>
+    <p class="group" id="gGroup"></p>
+    <h1 id="gHello"></h1>
+    <p class="lead">Dentro c'è il nome della persona a cui farai il regalo. Aprilo quando nessuno ti guarda lo schermo.</p>
+    <button class="btn btn-wax btn-big" id="open">Apri il bigliettino</button>
+    <p class="hint" id="notMe"></p>
+  </section>
+
+  <section id="result" hidden aria-live="polite">
+    <div class="ticket" id="ticket">
+      <div class="ticket-fold"></div>
+      <div class="ticket-body">
+        <p class="t-label">Fai il regalo a</p>
+        <p class="t-name" id="rName"></p>
+        <p class="t-idea" id="rIdea" hidden></p>
+      </div>
+    </div>
+    <dl class="facts" id="facts"></dl>
+    <p class="msg" id="rMsg" hidden></p>
+    <p class="shh">Acqua in bocca: se lo dici, la sorpresa è rovinata.</p>
+    <div class="out-actions">
+      <button class="btn btn-wax" id="share">Condividi nelle storie</button>
+      <a class="btn btn-ghost" href="../idee-regalo/" id="ideas">Idee regalo per questo budget</a>
+    </div>
+    <p class="hint">Nella storia non compare il nome che hai pescato.</p>
+  </section>
+
+  <section id="bad" hidden>
+    <h1>Questo bigliettino non si legge.</h1>
+    <p class="lead">Il link è incompleto, di solito perché è stato copiato a metà. Chiedi all'organizzatore di rimandartelo intero.</p>
+  </section>
+
+  <aside class="cta-own">
+    <h2>Organizzi anche tu un Babbo Natale segreto?</h2>
+    <p>Per i colleghi, la squadra o i cugini: estrai i nomi e manda i link in un minuto, gratis.</p>
+    <a class="btn btn-ghost" href="../">Crea il tuo gruppo</a>
+  </aside>
+</main>
+
+<script src="../codec.js"></script>
+<script src="reveal.js"></script>
+</body>
+</html>

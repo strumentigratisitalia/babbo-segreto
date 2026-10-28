@@ -1,0 +1,15 @@
+# Babbo Segreto
+
+> Generatore gratuito in italiano per il Babbo Natale segreto (Secret Santa). Si inseriscono i nomi, il budget, la data e le esclusioni; l'estrazione avviene nel browser e ogni partecipante riceve un link personale (per esempio su WhatsApp) che mostra solo a lui la persona a cui fare il regalo. Nessuna registrazione, nessuna app, nessun database.
+
+## Pagine
+- [Estrazione Babbo Natale segreto](https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/): lo strumento, con FAQ
+- [Come organizzare un Babbo Natale segreto](https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/guida/): numero di persone, budget, date, esclusioni, regole e varianti
+- [Idee regalo per budget](https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/idee-regalo/): sotto 10, 20, 30 e 50 euro
+- [Privacy](https://strumentigratisitalia.github.io/StrumentiGratisItalia/babbo-segreto/privacy/): nessun dato salvato su server
+
+## Fatti
+- Funziona da 3 partecipanti in su, senza limite massimo pratico.
+- Supporta esclusioni (anche reciproche) e un'idea regalo per partecipante.
+- L'organizzatore non vede gli abbinamenti.
+- Gratuito.
